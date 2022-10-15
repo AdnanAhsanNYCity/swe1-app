@@ -5,5 +5,5 @@ python:
 install:
 - pip install -r requirements.txt
 
-scripts:
-- make build
+script:
+- python manage.py runserver
