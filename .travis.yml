@@ -5,13 +5,16 @@ python:
 install:
 - pip install -r requirements.txt
 
-deploy:
-  provider: elasticbeanstalk
-  access_key_id:
-    secure: "AKIAVNZGUUZBKIRCVX3Z"
-  secret_access_key:
-    secure: "django-insecure-7yc^dq=w)p50m*!=jfu1ve&33k2g&_e85&ohf&-*+6wyba21!r"
-  region: "us-west-2"
-  app: "ebdjango-app"
-  env: "django-env"
-  bucket_name: "elasticbeanstalk-us-west-2-373206328898"
+script:
+- python test
+
+# deploy:
+#   provider: elasticbeanstalk
+#   access_key_id:
+#     secure: "AKIAVNZGUUZBKIRCVX3Z"
+#   secret_access_key:
+#     secure: "django-insecure-7yc^dq=w)p50m*!=jfu1ve&33k2g&_e85&ohf&-*+6wyba21!r"
+#   region: "us-west-2"
+#   app: "ebdjango-app"
+#   env: "django-env"
+#   bucket_name: "elasticbeanstalk-us-west-2-373206328898"
