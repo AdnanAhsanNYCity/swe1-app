@@ -22,8 +22,10 @@ after_script:
 
 deploy:
   provider: elasticbeanstalk
-  access_key_id: AKIAVNZGUUZBKIRCVX3Z 
-  secret_access_key: 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
+  access_key_id: 
+    secure: AKIAVNZGUUZBKIRCVX3Z 
+  secret_access_key:
+    secure:  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
   region: "us-west-2"
   app: "ebdjango-app"
   env: "django-env"
