@@ -25,7 +25,7 @@ deploy:
   access_key_id: 
     secure: AKIAVNZGUUZBKIRCVX3Z 
   secret_access_key:
-    secure:  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
+    secure: gNW8XjCYxYpbN3LWwFofqeqjNqxxICJ3oxfG5Kav
   region: "us-west-2"
   app: "ebdjango-app"
   env: "django-env"
