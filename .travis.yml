@@ -23,9 +23,9 @@ after_script:
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
-    secure: travis encrypt ACCESS_KEY_ID=‘my_key’ 
+    secure: "Encrypted <test>="
   secret_access_key:
-    secure: travis encrypt SECRET_KEY=‘my_key’ 
+    secure: "Encypted <test2>="
   region: "us-west-2"
   app: "ebdjango-app"
   env: "django-env"
