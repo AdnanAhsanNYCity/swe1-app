@@ -2,6 +2,9 @@ language: python
 python:
 - 3.9.12
 
+env: 
+  secure: $ACCESS_KEY_ID = test
+
 install:
 - pip install -r requirements.txt
 - pip install black
