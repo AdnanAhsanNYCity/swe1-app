@@ -7,7 +7,6 @@ install:
 - pip install black
 - pip install flake8
 - pip install coverage
-- import os
 
 before_script:
   - python manage.py migrate
@@ -24,9 +23,9 @@ after_script:
 deploy:
   provider: elasticbeanstalk
   access_key_id: 
-    secure: os.getenv($ACCESS_KEY_ID)
+    secure: $ACCESS_KEY_ID
   secret_access_key:
-    secure: os.getenv($SECRET_ACCESS_KEY)
+    secure: $SECRET_ACCESS_KEY
   region: "us-west-2"
   app: "ebdjango-app"
   env: "django-env"
